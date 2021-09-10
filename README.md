@@ -9,3 +9,11 @@
 
  - Users - Usuários da aplicação
  - Contatos - Contatos do Usuário
+
+
+ ### API endpoints
+
+ - /api/users - lista de usuarios
+ - /api/users/{id} Lista usuário por ID
+
+ 
