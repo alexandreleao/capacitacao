@@ -18,7 +18,7 @@
   
  - /api/user - cadastra usuário
 
- -/api/user/{id} Atualiza usuário por ID
- -/api/user/{id} Deleta usuário por ID
+ -/api/user/{id} - Atualiza usuário por ID
+ -/api/user/{id} - Deleta usuário por ID
 
  
