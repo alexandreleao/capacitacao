@@ -15,5 +15,10 @@
 
  - /api/users - lista de usuarios
  - /api/users/{id} Lista usuário por ID
+  
+ - /api/user - cadastra usuário
+
+ -/api/user/{id} Atualiza usuário por ID
+ -/api/user/{id} Deleta usuário por ID
 
  
