@@ -1,4 +1,4 @@
-## APlitivo de capacitação em Laravel
+## APlicativo de capacitação em Laravel
 
 * Laravel versão 8.6
 * Vuejs 3.0
