@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ConteudoController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -33,3 +35,21 @@ Route::get('/contatos',[ContatoController::class, 'index'])->name('api.contatoin
 Route::get('/contato/{id}',[ContatoController::class, 'show'])->name('api.contatoshow');
 
 Route::post('/contato',[ContatoController::class, 'store'])->name('api.contatostore');
+
+
+/*Post*/
+
+Route::get('/posts',[PostController::class, 'lista'])->name('api.postslista');
+
+Route::get('/posts/{id}',[PostController::class,'show'])->name('api.postshow');
+
+Route::post('/post',[PostController::class,'store'])->name('api.poststore');
+
+
+/*Conteúdo */
+
+Route::get('/conteudos',[ConteudoController::class,'index'])->name('api.conteudoindex');
+
+Route::get('/conteudos/{id}',[ConteudoController::class,'show'])->name('api.conteudoshow');
+
+Route::post('/conteudo',[ConteudoController::class,'store'])->name('api.conteudostore');

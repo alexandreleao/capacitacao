@@ -54,4 +54,6 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Contato::class, 'contato_id', 'id');
     }
+
+    
 }
