@@ -21,4 +21,16 @@
  - /api/user/{id}  Atualiza usuário por ID
  - /api/user/{id}  Deleta usuário por ID
 
+ - /api/contatos - cadastra contatos
+
+ - /api/contatos - Lista contatos
+ - /api/contatos/{id} Lista Contatos por ID
+ - /api/contato
+
+ - /api/Post
+
+ - /api/post/{id} -  Lista Post por ID
+ - /api/posts - Lista todos os post
+ - /api/post - Cadastra post
+
  
