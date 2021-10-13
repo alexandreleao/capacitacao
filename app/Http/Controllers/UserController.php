@@ -7,11 +7,13 @@ use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
-    public function userAction()
+    public function userAction(Request $request)
     {
+        
         $user = User::paginate(5);
+        
 
-        return Response()->Json($user);
+        return response()->Json($user);
     }
 
     public function show($id)
