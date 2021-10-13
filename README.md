@@ -20,7 +20,6 @@
 
  - /api/user/{id}  Atualiza usuário por ID
  - /api/user/{id}  Deleta usuário por ID
-<<<<<<< HEAD
 
  - /api/contatos - cadastra contatos
 
@@ -35,6 +34,4 @@
  - /api/post - Cadastra post
 
  
-=======
  
->>>>>>> 9fd88bb813b682ae57503f365bcab788847c1a40
