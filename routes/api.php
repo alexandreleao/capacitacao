@@ -51,3 +51,9 @@ Route::get('/conteudos',[ConteudoController::class,'index'])->name('api.conteudo
 Route::get('/conteudos/{id}',[ConteudoController::class,'show'])->name('api.conteudoshow');
 
 Route::post('/conteudo',[ConteudoController::class,'store'])->name('api.conteudostore');
+
+/* Rotas Básicas */
+
+Route::get('/greeting', function(){
+    return 'Hello Word';
+});

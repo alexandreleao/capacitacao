@@ -72,4 +72,11 @@ class UserController extends Controller
             return response()->json($user);
         }
     }
+
+    public function exemple()
+    {
+        return view('exemple');
+    }
+
+    
 }
