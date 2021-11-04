@@ -3,11 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TutorialController;
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/tutorial', [TutorialController::class, 'index'])->name('lista.tutoriais');
+
+
 
 /*
 Route::get('/login', [LoginController::class, 'loginView'])->name('login');

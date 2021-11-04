@@ -1,0 +1,27 @@
+JavaScript Object Notation
+JSON
+
+
+O Json é composto por duas coisas
+
+Atributo e valor
+
+ex:
+ nome = alexandre
+ idade = 90
+ caracteristicas = forte, bonito, maravilhoso, bondoso, etc...
+
+{
+    nome:"alexandre", 
+    idade:{
+        terra: 90, 
+        marte: 110
+    }, 
+    caracteristicas:[
+        {nome: "Força", valor: 95}, 
+        {nome: "Bondade", valor: 85}, 
+        {nome: "maravilhosidade", valor: 100}, 
+        {nome: "Bondade", valor: 90}
+        
+    ]
+}

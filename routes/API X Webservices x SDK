@@ -1,0 +1,23 @@
+API x Webservices x SDK
+
+API = Application Programming Interface
+Webservices = Webservices
+SDK = Software Development Kit
+
+
+API x Webservices
+
+- Todo Webservices é uma api, mas nem toda api é Webservices.
+
+
+- Um webservices é uma api que funciona através de requisições de HTTP.
+
+
+API x SDK
+
+  Login com Facebook
+ - Webservices
+ - SDK
+
+ Me dá a API de xyz = webservice
+ Me dá o SDK de xyz = SDK

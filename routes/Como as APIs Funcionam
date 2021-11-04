@@ -1,0 +1,23 @@
+Como as APIs funcionam?
+
+BASE:
+https://seusite.com.br/api
+
+Verbos: GET / POST / PUT / DELETE 
+
+
+GET = Pegar Informações
+POST = Inserir Informações no sistema
+PUT = Alterar informações no sistema
+DELETE = Deletar informações no sistema
+
+Para mandar Comandos (endpoint):
+
+GET https://seusite.com.br/api/users
+GET https://seusite.com.br/api/products
+GET https://seusite.com.br/api/products?page=1
+GET https://seusite.com.br/api/products?page=2
+GET https://seusite.com.br/api/products/3
+POST https://seusite.com.br/api/products (nome, preco, estoque, desc)
+PUT  https://seusite.com.br/api/products/3(preco,estoque)
+DELETE https://seusite.com.br/api/products/3

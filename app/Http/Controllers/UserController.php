@@ -9,11 +9,12 @@ class UserController extends Controller
 {
     public function userAction(Request $request)
     {
-        
-        $user = User::paginate(5);
-        
+        //$this->authorize('userActionListar', User::class);
 
-        return response()->Json($user);
+
+        $user = User::paginate(5);
+    
+        return response()->json($user);
     }
 
     public function show($id)
