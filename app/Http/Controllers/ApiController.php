@@ -40,8 +40,12 @@ class ApiController extends Controller
     {
         $array = ['error' => ''];
 
-        $array['list'] = Todo::all();
+       $todos = Todo::simplePaginate(2);
+
+       $array['list'] = $todos;
         
+       $array['current_page'] = $todos->currentPage();
+
         return $array;
     }
 
