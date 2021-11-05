@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\AuthController;
 //use App\Http\Controllers\{ LoginController, UserController, ContatoController,
    // PostController, ConteudoController
 //};
@@ -65,7 +66,9 @@ Route::get('/ping', function(){
        'pong' => true];
 
 });
-
+Route::get('/unautheticated', function(){
+return ['error' => 'Usuário não logado!'];
+})->name('login');
 // CRUD do TODO
 
 
@@ -81,7 +84,12 @@ Route::get('/ping', function(){
 // Delete / todo/2 = Deletar uma tarefa no sistema
 
 
-Route::post('/todo', [ApiController::class, 'createTodo']);
+
+Route::post('/user',[AuthController::class, 'create']);
+Route::post('/auth', [AuthController::class, 'login']);
+
+
+Route::middleware('auth:sanctum')->post('/todo', [ApiController::class, 'createTodo']);
 Route::get('/todos', [ApiController::class, 'readAllTodos']);
 Route::get('/todo/{id}', [ApiController::class, 'readTodo']);
 Route::put('/todo/{id}', [ApiController::class, 'updateTodo']);

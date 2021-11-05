@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 use App\Models\Todo;
+use App\Http\Controllers\AuthController;
 use Symfony\Contracts\Service\Attribute\Required;
 
 class ApiController extends Controller
