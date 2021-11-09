@@ -49,19 +49,35 @@ class AuthController extends Controller
 
         $creds = $request->only('email', 'password');
 
-        if(Auth::attempt($creds)){
+        $token = Auth::attempt($creds);
 
-            $user = User::where('email', $creds['email'])->first();
-            $item = time().rand(0,999);
-            $token = $user->createToken($item)->plainTextToken; //1|7XW9JyhyS0LI8nLeAsWv9a4BNh3AjZhfsPOqngGk
-
+        if($token){
             $array['token'] = $token;
-            //$array['success'] = false;
-            //$array['message'] = 'Bemvindo miseravii';
-
         } else {
-            $array['error'] = 'E-mail e /ou senha incorretos';
+            $array['error'] = 'E-mail e/ou senha incorretos. ';
         }
+
+        return $array;
+    }
+
+    public function logout()
+    {
+        $array = ['error' => ''];
+
+
+        Auth::logout();
+
+        
+        Return $array;
+    }
+
+    public function me()
+    {
+        $array = ['error' => ''];
+
+        $user = Auth::user();
+
+        $array['email'] = $user->email;
 
         return $array;
     }

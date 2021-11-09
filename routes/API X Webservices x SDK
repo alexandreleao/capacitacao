@@ -21,3 +21,7 @@ API x SDK
 
  Me dá a API de xyz = webservice
  Me dá o SDK de xyz = SDK
+
+
+Token jwt = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.
+            eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzNjQ3NTc4OCwiZXhwIjoxNjM2NDc5Mzg4LCJuYmYiOjE2MzY0NzU3ODgsImp0aSI6InBySkp5cXNoYUJ3WXNQWlAiLCJzdWIiOjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rDg_LCrhUAfF8z-t3EtVwIEEn4ZG0flRjcF6gL2oUdw
